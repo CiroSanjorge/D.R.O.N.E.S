@@ -5,45 +5,158 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bienvenido a D.R.O.N.E.S.com!</title>
+    <title>Formulario</title>
   </head>
   <body>
-    <!--------------------- MAIN --------------------->
-    <nav>
-      <li><a href="servicios.html">Volver atrás</a></li>
-    </nav>
+    <!-------------------- HEADER -------------------->
+    <header>
+      <div id="header">
+        <h1>D.R.O.N.E.S.</h1>
+        <h4>
+          (Dominio para la Realización de Operaciones Novedosas en base a
+          Entidades Supraterrenales)
+        </h4>
+      </div>
+      <!-------------------- NAV -------------------->
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Quienes somos?</a></li>
+          <li><a href="servicios.html">Nuestos servicios</a></li>
+          <li><a href="formulario.html">Contactanos! </a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-------------------- MAIN -------------------->
+
     <main>
-      <section class="formulario">
-        <h2>Formulario de compra</h2>
-        <p>  ( * Indica campo obligatorio )</p>
+      <fieldset class="formulario">
+        <legend>Formulario de contacto</legend>
+        <p>( * Indica campo obligatorio )</p>
         <form action="" method="get">
-          <label for="nombre">* Nombre: </label>
-          <input type="text" id="nombre" placeholder="Nombre..." required/>
+          <!------ NOMBRE ------>
+          <div>
+            <label for="nombre">* Nombre: </label>
+            <input type="text" id="nombre" placeholder="Nombre..." required />
+          </div>
+          <!------ APELLIDOS ------>
+          <div>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" placeholder="Apellidos..." />
+          </div>
+          <!------ EMAIL ------>
+          <div>
+            <label for="email">* Email: </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="ejemplo@gmail.com..."
+              required
+            />
+          </div>
+          <!------ URL PÁGINA ------>
 
-          <label for="apellidos">Apellidos: </label>
-          <input type="text" id="apellidos" placeholder="Apellidos..." />
+          <div>
+            <label for="url">URL de tu página: </label>
+            <input type="url" id="url" placeholder="https://ejemplo.com..." />
+          </div>
+          <!------ FECHA ------>
 
-          <label for="email">* Email: </label>
-          <input type="email" id="email" placeholder="ejemplo@gmail.com..." required/>
-
-          <label for="url">URL de tu página: </label>
-          <input type="url" id="url" placeholder="ejemplo.com..." />
-
-          <label for="apellidos">Apellidos: </label>
-          <input type="text" id="apellidos" placeholder="Apellidos..." />
-
-          <label for="apellidos">Apellidos: </label>
-          <input type="text" id="apellidos" placeholder="Apellidos..." />
-
-          <label for="apellidos">Apellidos: </label>
-          <input type="text" id="apellidos" placeholder="Apellidos..." />
-
-          <label for="apellidos">Apellidos: </label>
-          <input type="text" id="apellidos" placeholder="Apellidos..." />
-
-          <input type="button" value=">>> Enviar <<<" />
+          <div>
+            <label for="fecha">Fecha de contacto: </label>
+            <input type="date" id="fecha" />
+          </div>
+          <!------ NUMERO FAMILIARES ------>
+          <div>
+            <label for="n_familiares"
+              >Cuantos miembros hay en su familia interesado por nuestros
+              servicios de drones?
+            </label>
+            <input type="number" id="n_familiares" placeholder="1, 2, 3..." />
+          </div>
+          <!------ TELÉFONO ------>
+          <div>
+            <label for="tlf">Teléfono de contacto: *</label>
+            <input
+              type="tel"
+              id="tlf"
+              placeholder="+34-999999999"
+              pattern="[+][0-9]{2}[-][0-9]{9}"
+              required
+            />
+          </div>
+          <!------ SEXO ------>
+          <div>
+            <label for="sexo">Sexo:</label>
+            <div id="sexo">
+              <input type="radio" id="x" name="sexo" />
+              <label for="x">No Contesta </label>
+              <input type="radio" id="m" name="sexo" />
+              <label for="m">Mujer </label>
+              <input type="radio" id="h" name="sexo" />
+              <label for="h">Otro </label>
+              <input type="radio" id="o" name="sexo" />
+              <label for="o">Hombre </label>
+            </div>
+          </div>
+          <!------ ETIQUETAS ------>
+          <div>
+            <label for="etiqueta">Etiquetas del mensaje: </label>
+            <input type="checkbox" id="pedidos" name="etiqueta" /><label
+              for="pedidos"
+              >Pedidos</label
+            >
+            <input type="checkbox" id="envios" name="etiqueta" /><label
+              for="envios"
+              >Envios</label
+            >
+            <input type="checkbox" id="servicios" name="etiqueta" /><label
+              for="servicios"
+              >Servicio</label
+            >
+            <input type="checkbox" id="reclamaciones" name="etiqueta" /><label
+              for="reclamaciones"
+              >Reclamaciones</label
+            >
+            <input type="checkbox" id="preguntas" name="etiqueta" /><label
+              for="preguntas"
+              >Preguntas</label
+            >
+            <input type="checkbox" id="propuestas" name="etiqueta" /><label
+              for="propuestas"
+              >Propuestas</label
+            >
+            <input type="checkbox" id="denuncias" name="etiqueta" /><label
+              for="denuncias"
+              >Denuncias</label
+            >
+            <input type="checkbox" id="personal" name="etiqueta" /><label
+              for="personal"
+              >Personal</label
+            >
+            <input type="checkbox" id="prensa" name="etiqueta" /><label
+              for="prensa"
+              >Prensa</label
+            >
+            <input type="checkbox" id="particular" name="etiqueta" /><label
+              for="particular"
+              >Particular</label
+            >
+          </div>
+          <!------ MENSAJE ------>
+          <div>
+            <label for="mensaje"></label>
+            <textarea
+              id="mensje"
+              cols="70"
+              rows="10"
+              placeholder="Escribe tu mensaje y te responderemos cuando podamos..."
+            ></textarea>
+          </div>
+          <!------ INPUT ------>
+          <input type="submit" value=">>> Enviar <<<" />
         </form>
-      </section>
+      </fieldset>
     </main>
     <!--------------------- PIE DE PÁGINA --------------------->
     <footer>
