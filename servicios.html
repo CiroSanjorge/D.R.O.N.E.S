@@ -29,6 +29,17 @@
     </header>
     <!-------------------- MAIN -------------------->
     <main>
+      <div id="fundraiser">
+        <h3>DONA A LA CARIDAD!!1!</h3>
+        <!--TODO: hacer que cada donacion aumente la barra-->
+        <form action="" method="get">
+          <label for="cant_donacion">Seleccione cantidad a donar</label>
+          <input id="cant_donacion" type="number" />
+          <button>DONAR</button>
+          <label for="ong">Meta de donaciones: </label>
+          <progress id="ong" value="42" max="100">20%</progress>
+        </form>
+      </div>
       <div class="servicios">
         <h2>Servicios</h2>
         <!-------------------- FOTÓGRAFOS ------------------>
@@ -40,34 +51,47 @@
             <img src="img/dron_pro.jpg" alt="dron_pro" id="dron_pro" />
             <p>
               Dron especializado en todas las labores relacionadas a la
-              fotografia fotografía
+              fotografia, grabación de vídeo y audio.
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: SD 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 31.900€</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- FOTOGRAFO FOTOS ------------------>
           <article class="drones">
             <label for="dron_fotos">Dron_Fotos</label>
             <img src="img/dron_fotos.jpg" alt="dron_fotos" />
-            <p>
-              Dron especializado en todas las labores relacionadas a la
-              fotografia fotografía
-            </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <p>Dron especializado en captura de imágenes.</p>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- FOTOGRAFO VIDEO ------------------>
@@ -78,14 +102,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- FOTOGRAFO BARATO ------------------>
@@ -96,14 +128,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
         </section>
@@ -118,14 +158,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- REPARTIDOR PESADO ------------------>
@@ -136,14 +184,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- REPARTIDOR VELOZ ------------------>
@@ -154,14 +210,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- REPARTIDOR SIGILOSO ------------------>
@@ -172,14 +236,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
         </section>
@@ -194,14 +266,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- DRON P.E.M. ------------------>
@@ -212,14 +292,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- DRON BOMBA ------------------>
@@ -230,14 +318,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
           <!-------------------- DRON DIVINO ------------------>
@@ -248,14 +344,22 @@
               Dron especializado en todas las labores relacionadas a la
               fotografia fotografía
             </p>
-            <ul>
-              <li>Fotografía: 16K</li>
-              <li>Vídeo: 8k 120fps</li>
-              <li>Almacenamiento: Canvas Go! Kingston 512GB</li>
-              <li>Autonomia: +70 horas</li>
-              <li>Resistencia total a lluvia y condiciones extremas</li>
-              <li>PRECIO: 12</li>
-            </ul>
+            <form>
+              <label for="foto">Calidad fotografía:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="video">Calidad video: </label>
+              <meter id="video" value="1">100%</meter>
+
+              <label for="foto">Calidad Audio:</label>
+              <meter id="foto" value="1">100%</meter>
+
+              <label for="resistencia">Resistencia a golpes: </label>
+              <meter id="resistencia" value="1">100%</meter>
+
+              <label for="almacenamiento">Espacio disponible</label>
+              <meter id="almacenamiento" value="1">100%</meter>
+            </form>
             <button>> COMPRAR <</button>
           </article>
         </section>
