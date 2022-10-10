@@ -1,4 +1,78 @@
-img, figure{
-    width: 150px;
+@font-face {
+  font-family: fontBody;
+  src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
 
+* {
+  padding: 0.8%;
+}
+/*
+     Fondos --------------------------------------------------------
+    */
+header,
+article,
+footer {
+  background-color: rgba(255, 255, 255, 0.293);
+}
+a:visited,
+a:link {
+  color: rgb(162, 246, 154);
+}
+body {
+  background-color: rgb(171, 126, 243);
+  color: rgb(53, 53, 53);
+}
+h1 {
+  color: rgb(255, 227, 104);
+}
+/*
+     Estilos --------------------------------------------------------
+    */
+* {
+  text-justify: center;
+}
+body {
+  font-family: fontBody;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+html {
+  padding: 0;
+  margin: 0;
+}
+header * {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+header div {
+  display: flex;
+}
+header h4 {
+  font-size: smaller;
+}
+nav ul {
+  list-style-type: none;
+}
+ul {
+  flex-direction: row;
+}
+li {
+  margin: 0 10px;
+  padding: 0 15px;
+
+  background-color: rgba(0, 0, 0, 0.293);
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+figure {
+  width: 150px;
 }
