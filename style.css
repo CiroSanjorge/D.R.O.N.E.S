@@ -3,33 +3,57 @@
   src: url(fonts/Nunito/Nunito-VariableFont_wght.ttf);
 }
 
-* {
-  padding: 0.8%;
+/*
+     COLOR PRINCIPAL --------------------------------------------------------
+    */
+body {
+  color: rgb(152, 207, 255);
+}
+body {
+  background-color: rgb(74, 132, 182);
+}
+
+/*
+     COLOR DE DESTAQUE 1 ---------
+    */
+legend,
+h1,
+a:visited,
+a:link {
+  color: rgb(250, 253, 255)
+}
+
+/*
+     COLOR DE DESTAQUE 2 --------
+    */
+h3,
+h2 {
+  color: #ffc3b4;
+  color: #ffe3b0;
 }
 /*
-     Fondos --------------------------------------------------------
+    FONDO 1 -------------
     */
 header,
 article,
-footer {
-  background-color: rgba(255, 255, 255, 0.293);
+footer,
+form,
+legend,
+h3,
+h2,
+blockquote {
+  background-color: rgba(0, 6, 24, 0.562);
 }
-a:visited,
-a:link {
-  color: rgb(162, 246, 154);
-}
-body {
-  background-color: rgb(171, 126, 243);
-  color: rgb(53, 53, 53);
-}
-h1 {
-  color: rgb(255, 227, 104);
-}
+
 /*
-     Estilos --------------------------------------------------------
+     ESTILOS --------------------------------------------------------
     */
 * {
-  text-justify: center;
+  padding: 0.5em;
+}
+html {
+  padding: 0;
+  margin: 0;
 }
 body {
   font-family: fontBody;
@@ -39,31 +63,37 @@ body {
   margin: 0;
   padding: 0;
 }
-html {
-  padding: 0;
-  margin: 0;
+
+article {
+  margin-bottom: 0.5em;
 }
+h2{
+  padding-left: 3em;
+}
+/*
+     MENU DE NAVEGACION --------------------------------------------------------
+    */
 header * {
-  padding: 0;
+  padding: 0.3em;
   margin: 0;
   display: flex;
-  flex-direction: column;
 }
 header div {
   display: flex;
 }
 header h4 {
-  font-size: smaller;
+  padding: 1em 0;
+  align-items: center;
+  justify-content: center;
+
 }
 nav ul {
   list-style-type: none;
 }
-ul {
-  flex-direction: row;
-}
 li {
-  margin: 0 10px;
-  padding: 0 15px;
+  margin: 0.3em;
+  padding: 0 1em;
+  text-align: justify;
 
   background-color: rgba(0, 0, 0, 0.293);
 }
@@ -75,4 +105,13 @@ a {
 img,
 figure {
   width: 150px;
+}
+footer {
+  justify-self: flex-end;
+}
+footer,
+footer > * {
+  margin: 0;
+  padding-bottom: 0.01;
+  flex-flow: row-reverse;
 }
